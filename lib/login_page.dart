@@ -33,6 +33,7 @@ class LoginPage extends StatelessWidget {
               Icon(
                 FontAwesomeIcons.opencart,
                 size: 100,
+                color: Colors.white,
               ),
               SizedBox(
                 height: 20.0,
@@ -41,6 +42,7 @@ class LoginPage extends StatelessWidget {
                 'Shrine',
                 style: TextStyle(
                   fontSize: 30,
+                  color: Colors.white,
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.italic,
                 ),
@@ -50,9 +52,14 @@ class LoginPage extends StatelessWidget {
               ),
               TextField(
                 keyboardType: TextInputType.emailAddress,
+                style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   labelText: 'Email',
-                  prefixIcon: Icon(Icons.email),
+                  labelStyle: TextStyle(color: Colors.white),
+                  prefixIcon: Icon(
+                    Icons.email,
+                    color: Colors.white,
+                  ),
                   enabledBorder: kEnabledBorder,
                   focusedBorder: kFocusedBorder,
                 ),
@@ -62,9 +69,14 @@ class LoginPage extends StatelessWidget {
               ),
               TextField(
                 obscureText: true,
+                style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   labelText: 'Password',
-                  prefixIcon: Icon(Icons.lock),
+                  labelStyle: TextStyle(color: Colors.white),
+                  prefixIcon: Icon(
+                    Icons.lock,
+                    color: Colors.white,
+                  ),
                   enabledBorder: kEnabledBorder,
                   focusedBorder: kFocusedBorder,
                 ),
@@ -74,7 +86,8 @@ class LoginPage extends StatelessWidget {
                   Spacer(),
                   Text(
                     'Forgot Password? ',
-                    style: TextStyle(fontStyle: FontStyle.italic),
+                    style: TextStyle(
+                        fontStyle: FontStyle.italic, color: Colors.white),
                   ),
                 ],
               ),
@@ -112,7 +125,10 @@ class LoginPage extends StatelessWidget {
                 },
               ),
               Spacer(),
-              Text("Don't have an Account? Register Now ! ")
+              Text(
+                "Don't have an Account? Register Now ! ",
+                style: TextStyle(color: Colors.white),
+              )
             ],
           ),
         ),
