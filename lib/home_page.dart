@@ -1,3 +1,4 @@
+import 'package:e_commerce/cart_page.dart';
 import 'package:e_commerce/categories.dart';
 import 'package:e_commerce/home.dart';
 import 'package:e_commerce/local_stores.dart';
@@ -27,8 +28,15 @@ class _HomePageState extends State<HomePage> {
         title: Text('Shrine'),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.shopping_cart),
+            icon: Icon(Icons.search),
             onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.shopping_cart),
+            onPressed: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => CartPage()));
+            },
           )
         ],
       ),
@@ -103,6 +111,11 @@ class _HomePageState extends State<HomePage> {
             ListTile(
               leading: Icon(Icons.shopping_cart),
               title: Text('My Cart'),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => CartPage()));
+              },
             ),
             ListTile(
               leading: Icon(Icons.favorite),
@@ -125,6 +138,12 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: pageBuilder(),
+      floatingActionButton: selectedPage == Pages.suggestions
+          ? FloatingActionButton(
+              child: Icon(Icons.chat),
+              onPressed: () {},
+            )
+          : null,
     );
   }
 
