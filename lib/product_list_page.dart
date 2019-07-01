@@ -26,7 +26,7 @@ class ProductListPage extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (_) => ProductPage(
-                    item: laptops[index],
+                    item: itemList[index],
                   ),
                 ),
               );
@@ -38,13 +38,18 @@ class ProductListPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
                   Hero(
-                      tag: itemList[index].img,
-                      child: Image.asset(itemList[index].img)),
+                    tag: itemList[index].img,
+                    child: Image.asset(
+                      itemList[index].img,
+                      fit: BoxFit.scaleDown,
+                      height: 250,
+                    ),
+                  ),
                   Text(
                     itemList[index].name,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(fontSize: 18),
-                  )
+                  ),
                 ],
               ),
             ),
