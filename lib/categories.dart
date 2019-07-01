@@ -31,14 +31,26 @@ class Categories extends StatelessWidget {
             ),
           ),
         ),
-        Card(
-          elevation: 10.0,
-          margin: EdgeInsets.all(10.0),
-          child: Center(
-            child: Text(
-              'Mobile Phones',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+        GestureDetector(
+          onTap: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => ProductListPage(
+                  title: 'Mobile Phones',
+                  itemList: mobiles,
+                ),
+              ),
+            );
+          },
+          child: Card(
+            elevation: 10.0,
+            margin: EdgeInsets.all(10.0),
+            child: Center(
+              child: Text(
+                'Mobile Phones',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
         ),
@@ -53,14 +65,26 @@ class Categories extends StatelessWidget {
             ),
           ),
         ),
-        Card(
-          elevation: 10.0,
-          margin: EdgeInsets.all(10.0),
-          child: Center(
-            child: Text(
-              'Headsets / Headphones',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+        GestureDetector(
+          onTap: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => ProductListPage(
+                  title: 'Headphones/Headsets',
+                  itemList: headphones,
+                ),
+              ),
+            );
+          },
+          child: Card(
+            elevation: 10.0,
+            margin: EdgeInsets.all(10.0),
+            child: Center(
+              child: Text(
+                'Headsets / Headphones',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
         ),
