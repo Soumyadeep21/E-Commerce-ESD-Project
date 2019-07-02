@@ -1,3 +1,4 @@
+import 'package:e_commerce/cart_page.dart';
 import 'package:e_commerce/items.dart';
 import 'package:e_commerce/product_page.dart';
 import 'package:e_commerce/products.dart';
@@ -15,6 +16,19 @@ class ProductListPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
         centerTitle: true,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.shopping_cart),
+            onPressed: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => CartPage()));
+            },
+          )
+        ],
       ),
       body: Container(
         child: GridView.builder(
