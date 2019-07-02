@@ -6,7 +6,8 @@ import 'package:flutter_auth_buttons/flutter_auth_buttons.dart';
 
 class LoginPage extends StatelessWidget {
   void navigateToHome(BuildContext ctx) {
-    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) => HomePage()));
+    Navigator.of(ctx)
+        .pushReplacement(MaterialPageRoute(builder: (_) => HomePage()));
   }
 
   @override
