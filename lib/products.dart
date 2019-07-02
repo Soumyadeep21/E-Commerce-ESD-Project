@@ -162,3 +162,56 @@ List<Item> headphones = [
       img: 'assets/headset7.jpeg',
       price: 3899),
 ];
+
+List<Item> smartWatch = [
+  Item(
+    name:
+        'Apple Watch Series 3 GPS - 42 mm Space Grey Aluminium Case with Black Sport Band  (Black Strap Regular)',
+    description:
+        "GPS and Altimeter Swimproof Voice Based Siri 3 Activity Rings Tracking - Move, Exercise, Stand Smart Coaching Activity Sharing and Achievements Heart Rate Monitor Breathe App Notifications Touchscreen Notifier, Fitness & Outdoor",
+    img: 'assets/watch1.jpeg',
+    price: 30999,
+  ),
+  Item(
+    name: 'Samsung Galaxy Watch 46 mm Silver Smartwatch  (Black Strap Regular)',
+    description:
+        "Circular Design and Vintage Textured Body with Scratch Resistant Gorilla Glass DX+ Swim Ready - Water Resistant Upto 50 m (5 ATM)  Check Physical Location and Map Routes with Built-in GPS Track Exercise Time, Calories Burned, Heart Rate, Distance and Pace Battery Lasts Over 80 hrs on Bluetooth Mode and 24 hrs with GPS On View Schedule at a Glance in My Day Watch Face, Get Reminded of Appointments and Important Occasions  Rotating Bezel UI Touchscreen Fitness & Outdoor",
+    img: 'assets/watch2.jpeg',
+    price: 26990,
+  ),
+  Item(
+    name: 'Lenovo Ego Black Smartwatch  (Black Strap Regular)',
+    description:
+        "Take a step towards an active lifestyle with this smartwatch from Lenovo. Thanks to its 5 ATM Waterproof Performance, you can take a dive into your pool without any worries. Thanks to built-in sensors and the real-time sleep monitoring feature, you can get a comprehensive analysis of your daily activities. And, what’s more? It is lightweight and feels comfortable around your wrist.",
+    img: 'assets/watch3.jpeg',
+    price: 1999,
+  ),
+  Item(
+    name: 'Fitbit Versa Lite Edition Smartwatch  (Grey Strap Regular)',
+    description:
+        "Take a step towards a healthy lifestyle with the Fitbit Versa Lite. Track your heart rate, activities, sleep pattern, and more with this smartband. Also, you will get notifications for calls, texts, and other events, allowing you to stay in touch with the outside world. It also features a lightweight and swim-proof design which makes it the ideal companion for any type of workout.",
+    img: 'assets/watch4.jpeg',
+    price: 15498,
+  ),
+  Item(
+    name: 'Mi Band 3  (Black Strap, Size : Regular)',
+    description:
+        "Whether you are working out or sitting in an important business meeting, you can always monitor your daily fitness activities while not missing any calls, texts, and app notifications by wearing this Mi Band 3. This wearable smart device features an OLED Touchscreen, Water Resistance up to 50 M, and a Real-time Activity Tracking function to encourage you to lead an active life",
+    img: 'assets/watch5.jpeg',
+    price: 1999,
+  ),
+  Item(
+    name: 'Honor Band 4  (Coral Pink Strap, Size : Regular)',
+    description:
+        "Go for a swim wearing the Honor Band 4 and allow it to calculate the number of laps you just completed. The Honor Band 4 is water-resistant up to 50 meters and comes with premium features that will help you monitor your sleep and heart rate.",
+    img: 'assets/watch6.jpeg',
+    price: 2599,
+  ),
+  Item(
+    name: 'Fastrack SWD90059PP05 Reflex 2.0  (Black Strap, Size : Regular)',
+    description:
+        "The new fastrack Reflex Smartwatch Fitness Band, is the most awesome band you can ask for. Not only does it look uber cool with the 2 color combination of Purple on the outside and Black on the inside, further the silicone strap ensures it gives you a snugfit while staying light on your wrist! It is a fitness band with smartwatch features. The band has Steps, Distance and Calorie Tracker, Sleep Tracker, Call & SMS Alerts, OLED Display, 10 Days Power Reserve, Vibration Alarm, Sedentary Reminder and is IPX6 Water Resistant. . It is compatible with both IOS and Android OS. And all of this at a price that is hard match anywhere else with quality and promise of the brand Fastrack. Move on and get one for yourself!",
+    img: 'assets/watch7.jpeg',
+    price: 1995,
+  )
+];
