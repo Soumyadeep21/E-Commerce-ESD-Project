@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    selectedPage = Pages.home;
+    selectedPage = Pages.categories;
   }
 
   @override
