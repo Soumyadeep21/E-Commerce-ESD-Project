@@ -1,7 +1,6 @@
 import 'package:e_commerce/cart_page.dart';
 import 'package:e_commerce/items.dart';
 import 'package:e_commerce/product_page.dart';
-import 'package:e_commerce/products.dart';
 import 'package:flutter/material.dart';
 
 class ProductListPage extends StatelessWidget {
