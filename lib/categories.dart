@@ -99,14 +99,26 @@ class Categories extends StatelessWidget {
             ),
           ),
         ),
-        Card(
-          elevation: 10.0,
-          margin: EdgeInsets.all(10.0),
-          child: Center(
-            child: Text(
-              'Fitness Bands',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+        GestureDetector(
+          onTap: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => ProductListPage(
+                  title: 'Smart Watch/Fitness Band',
+                  itemList: smartWatch,
+                ),
+              ),
+            );
+          },
+          child: Card(
+            elevation: 10.0,
+            margin: EdgeInsets.all(10.0),
+            child: Center(
+              child: Text(
+                'Fitness Bands / Smart Watches',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
         ),
